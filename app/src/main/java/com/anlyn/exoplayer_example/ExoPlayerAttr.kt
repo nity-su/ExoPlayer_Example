@@ -36,7 +36,7 @@ class ExoPlayerAttr(context:Context) {
         */
         val mediasource = ExtractorMediaSource.Factory(DefaultHttpDataSourceFactory(userAgent,null))
             .setExtractorsFactory(DefaultExtractorsFactory())
-            .createMediaSource(Uri.parse("http://220.81.236.142:8080/violet_cm.mp4"))
+            .createMediaSource(Uri.parse("url"))
         exoPlayer.prepare(mediasource)
     }
 
